@@ -1,0 +1,33 @@
+.level-3 {
+    width: 484px;
+    height: 20px;
+}
+
+.level-3__menu {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+    font-size: 14px;
+}
+
+.level-3__element {
+    margin-right: 25px;
+    font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.information__link_sale {
+    color: red;
+}
+
+.orange-line {
+    width: 12px;
+    height: 1.67px;
+    background: #FC6E1D;
+    position: absolute;
+}

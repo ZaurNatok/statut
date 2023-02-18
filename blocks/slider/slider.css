@@ -1,0 +1,115 @@
+.swiper-container {
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet:focus {
+    outline: none;
+  }
+
+  .swiper-container .swiper-slide {
+      position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #CCFF90;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .slider__control-button-next {
+      position: absolute;
+      z-index: 50;
+      width: 40px;
+      height: 40px;
+      background: #f9f9fa;
+      display: flex;
+      align-items: center;
+      top: calc(50% - 20px);
+      right: 28px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+
+  .slider__icon {
+      margin: auto;
+  }
+
+
+  .slider__control-button-prev {
+    position: absolute;
+    z-index: 50;
+    width: 40px;
+    height: 40px;
+    background: #f9f9fa;
+    display: flex;
+    align-items: center;
+    top: calc(50% - 20px);
+    left: 28px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .slider__control-button-prev .slider__icon {
+      transform: rotate(180deg);
+  } 
+
+  .swiper-pagination-bullet {
+    width: 25px!important;
+    height: 2px!important;
+    border-radius: 2px!important;
+    background: rgba(255, 255, 255, 0.5)!important;
+    border-radius: 2px!important;
+    opacity: 1!important;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 25px!important;
+    height: 2px!important;
+    border-radius: 2px!important;
+    background: rgba(255, 255, 255, 1)!important;
+    border-radius: 2px!important;
+    opacity: 1!important;
+  }
+
+  .swiper-pagination-bullets {
+      bottom:20px!important;
+  }
+
+  .swiper-container-items .swiper-slide {
+    position: relative;
+    text-align: center;
+    width: 278px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+
+.swiper-container-items, .swiper-container-news {
+    overflow: hidden;
+}
+
+@media screen and (max-width:414px) {
+  .swiper-pagination-bullets {
+    bottom:10px!important;
+  }
+}

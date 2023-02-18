@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./vendor/swiper/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>СТАТУТ</title>
+</head>
+<body>
+
+    <header>
+        
+        <div class="topline">
+            <div class="level-1">
+
+                <div class="modal modal_city">
+                    <div class="city__top">
+                        <div class="city__header">
+                            <img src="./img/icons/city/Places/Icon.svg" alt="" class="city__icon">
+                            <p class="city__title">Ваш населенный пункт</p>
+                        </div>
+                        <img src="./img/icons/close/Interface/Icon.svg" alt="" class="close-button">
+                    </div>
+                    <form action="" class="modal-city__form" name="city">
+                        <label for="city" class="form__label">Поиск населенного пункта</label><br>
+                        <input name="city" type="text" class="modal-city__search" placeholder="Откуда Вы?">
+                        <button type="submit" class="city__button"><img src="./img/Новая папка/Interface/Icon.svg" class="search-icon" alt="Поиск"></button>
+                    </form>
+                    <ul class="cities"></ul>
+                </div>
+                <ul class="level-1__information">
+                    <li class="information__element information__element_city"><img src="./img/Communications/Places/Icon.svg" alt="Город" class="icon"><a href=# class="information__link information__link_city">Москва</li>
+                    <li class="information__element information__element_delivery"><a href=# class="information__link"><img src="./img/Communications/Shippings/Icon.svg" alt="Доставка и оплата" class="icon">Доставка и оплата</a></li>
+                    <li class="information__element information__element_address"><a href=# class="information__link"><img src="./img/Communications/Shopping/Icon.svg" alt="Адрес и часы работы" class="icon">Адрес и часы работы</a></li>
+                </ul>
+                <ul class="level-1__contacts">
+                    <li class="information__element information__element_email"><a href=# class="information__link"><img src="./img/Communications/Icon.svg" class="icon" alt="Электронная почта">market@estatut.ru</li>
+                    <li class="information__element information__element_phone"><a href=# class="information__link"><img src="./img/Communications/Devices/Icon.svg" class="icon" alt="Телефон">8 (968) 660-65-50</a></li>
+                    <li class="information__element information__element_info"><a href=# class="information__link information__link_info"><img src="./img/Communications/Interface/Icon.svg" alt="Информация"></a></li>
+                </ul>
+            </div>
+            <div class="level-1_mobile">
+                <a href=# class="information__link"><img src="./img/icons/menu/Interface/Icon.svg" class="icon" alt="Иконка меню"><div class="orange-line"></div></a>
+                <img src="./img/logo.png" class="logo" alt="Логотип">
+                <form action="" class="level-1_mobile__form">
+                    <input type="text" class="level-1_mobile__input" placeholder="Что будем искать?">
+                    <button class="level-1_mobile__button" type="submit"><img src="./img/icons/mobile_search/Interface/Icon.svg" alt=""></button>
+                </form>
+                <a href=# class="information__link"><img src="./img/icons/Interface/Shopping/Icon.svg" class="icon" alt="Корзина"><div class="counter">10</div></a>
+            </div>
+        </div>
+        <div class="under-topline">
+            <div class="level-2">
+                <div class="level-2__left">
+                    <img src="./img/logo.png" class="logo" alt="Логотип">
+                    <form action="" class="level-2__form">
+                        <input type="text" class="level-2__search" placeholder="Автор, название, ISBN">
+                        <button type="submit"><img src="./img/Новая папка/Interface/Icon.svg" class="search-icon" alt="Поиск"> Искать</button>
+                    </form>
+                </div>
+                <ul class="level-2__right">
+                    <li class="level-2__element"><a href=# class="information__link"><img src="./img/Interface/Interface/Icon.svg" class="icon" alt="Отложенные товары">Отложено</li>
+                    <li class="level-2__element"><a href=# class="information__link"><img src="./img/icons/Interface/Icon.svg" class="icon" alt="Личный кабинет">Войти</a></li>
+                    <li class="level-2__element"><a href=# class="information__link"><img src="./img/icons/Interface/Shopping/Icon.svg" class="icon" alt="Корзина"><div class="counter">10</div>Корзина</a></li>
+                </ul>
+            </div>
+            <div class="level-3">
+                <ul class="level-3__menu">
+                    <li class="level-3__element"><a href=# class="information__link"><img src="./img/icons/menu/Interface/Icon.svg" class="icon" alt="Иконка меню"><div class="orange-line"></div>Каталог</li>
+                    <li class="level-3__element"><a href=# class="information__link">Авторы</a></li>
+                    <li class="level-3__element"><a href=# class="information__link">Новинки</a></li>
+                    <li class="level-3__element"><a href=# class="information__link information__link_sale"><img src="./img/icons/sale/Shopping/Icon.svg" class="icon" alt="Иконка меню">Скидки</a></li>
+                    <li class="level-3__element"><a href=# class="information__link">Партнерам</a></li>
+                    <li class="level-3__element"><a href=# class="information__link">Мы</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="grid">
+        <div class="grid-container">
+            <div class="slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/2=3.png" alt=""></div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="slider__control-button-next"><img src="./img/icons/slider/Arrows/Icon.svg" class="slider__icon" alt=""></div>
+                <div class="slider__control-button-prev"><img src="./img/icons/slider/Arrows/Icon.svg" class="slider__icon" alt=""></div>
+            </div>
+            <div class="day">
+                <div class="day__top">
+                    <h3 class="day__title">Книга дня</h3>
+                    <span class="day__timer">08:56:31</span>
+                </div>
+                <img class="day__image" src="./img/day__book.png" alt="Книга дня">
+                <p class="item__category">Корпоративное право</p>
+                <p class="item__title">Инвестирование: способы, риски, субъекты : монография</p>
+                <p class="item__author">Майфат А.В.</p>
+                <p class="item__price">4 450</p>
+                <div class="item__buttons">
+                    <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                    <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                </div>
+            </div>
+            <div class="one">
+                <p class="one__text">Бесплатно доставим ваш заказ при покупке от 2000 ₽</p>
+                <img src="./img/TDV_M46_03.png" alt="">
+                <img src="./img/Vector 161.png" alt="" class="one_line">
+            </div>
+            <div class="two">
+                <p class="two__text">Скидка при регистрации до 15%</p>
+                <img src="./img/Illustration2.png" alt="">
+                <img src="./img/Vector 162.png" alt="" class="two_line">
+            </div>
+          </div>
+    </section>
+
+    
+
+    <section class="items swiper-container-items">
+        <div class="items__top">
+            <h2 class="items__header">Новые поступления</h2>
+            <div class="items__control-buttons">
+                <div class="control-buttons__button control-buttons__button_left"><img src="./img/icons/control/left/Arrows of Slider/Arrows/Icon.svg" class="control-buttons__icon" alt="Налево"></div>
+                <div class="control-buttons__button control-buttons__button_right"><img src="./img/icons/control/right/Arrows of Slider/Arrows/Icon.svg" class="control-buttons__icon" alt="Вправо"></div>
+            </div>
+        </div>
+        <div class="items__books swiper-wrapper">
+
+            
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book1.png" alt="" class="item__image">
+                    <p class="item__label item__label_bestseller">Бестселлер</p>
+                    <p class="item__proposal">1+1=3</p>
+                    <div class="item__description">
+                        <p class="item__category">Корпоративное право</p>
+                        <p class="item__title">Инвестирование: способы, риски, субъекты : монография</p>
+                        <p class="item__author">Майфат А.В.</p>
+                        <p class="item__price">4 450</p>
+                        <div class="item__recommendations">
+                            <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                            <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                        </div>
+                        <div class="item__buttons">
+                            <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                            <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book2.png" alt="" class="item__image">
+                    <p class="item__label item__label_new">Новинка</p>
+                    <div class="item__description">
+                        <p class="item__category">Договорное право</p>
+                        <p class="item__title">Договор коммерческой концессии (франчайзинг). Граж...</p>
+                        <p class="item__author">Багдасарян А.Ф.</p>
+                        <p class="item__price">372</p>
+                        <div class="item__recommendations">
+                            <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                            <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                        </div>
+                        <div class="item__buttons">
+                            <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                            <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book3.png" alt="" class="item__image">
+                    <div class="item__description">
+                        <p class="item__category">Конкурентное право</p>
+                        <p class="item__title">Договор коммерческой концессии (франчайзинг). Граж...</p>
+                        <p class="item__author">Башлаков-Николаев И.В.</p>
+                        <p class="item__price">4 450</p>
+                        <div class="item__recommendations">
+                            <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                            <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                        </div>
+                        <div class="item__buttons">
+                            <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                            <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book1.png" alt="" class="item__image">
+                    <p class="item__label item__label_bestseller">Бестселлер</p>
+                    <p class="item__proposal">1+1=3</p>
+                    <div class="item__description">
+                        <p class="item__category">Корпоративное право</p>
+                        <p class="item__title">Инвестирование: способы, риски, субъекты : монография</p>
+                        <p class="item__author">Майфат А.В.</p>
+                        <p class="item__price">450</p>
+                        <div class="item__recommendations">
+                            <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                            <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                        </div>
+                        <div class="item__buttons">
+                            <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                            <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book1.png" alt="" class="item__image">
+                    <p class="item__label item__label_bestseller">Бестселлер</p>
+                    <p class="item__proposal">1+1=3</p>
+                    <div class="item__description">
+                        <p class="item__category">Корпоративное право</p>
+                        <p class="item__title">Инвестирование: способы, риски, субъекты : монография</p>
+                        <p class="item__author">Майфат А.В.</p>
+                        <p class="item__price">4 450</p>
+                        <div class="item__recommendations">
+                            <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                            <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                        </div>
+                        <div class="item__buttons">
+                            <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                            <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book2.png" alt="" class="item__image">
+                    <p class="item__label item__label_new">Новинка</p>
+                    <div class="item__description">
+                        <p class="item__category">Договорное право</p>
+                        <p class="item__title">Договор коммерческой концессии (франчайзинг). Граж...</p>
+                        <p class="item__author">Багдасарян А.Ф.</p>
+                        <p class="item__price">372</p>
+                        <div class="item__recommendations">
+                            <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                            <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                        </div>
+                        <div class="item__buttons">
+                            <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                            <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book3.png" alt="" class="item__image">
+                    <div class="item__description">
+                        <p class="item__category">Конкурентное право</p>
+                        <p class="item__title">Договор коммерческой концессии (франчайзинг). Граж...</p>
+                        <p class="item__author">Башлаков-Николаев И.В.</p>
+                        <p class="item__price">4 450</p>
+                        <div class="item__recommendations">
+                            <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                            <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                        </div>
+                        <div class="item__buttons">
+                            <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                            <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book1.png" alt="" class="item__image">
+                    <p class="item__label item__label_bestseller">Бестселлер</p>
+                    <p class="item__proposal">1+1=3</p>
+                    <div class="item__description">
+                        <p class="item__category">Корпоративное право</p>
+                        <p class="item__title">Инвестирование: способы, риски, субъекты : монография</p>
+                        <p class="item__author">Майфат А.В.</p>
+                        <p class="item__price">450</p>
+                        <div class="item__recommendations">
+                            <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                            <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                        </div>
+                        <div class="item__buttons">
+                            <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                            <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="items__bottom">
+            <p class="items__header"><a href=# class="show-more">Показать все книги раздела</a></p>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <p class="subscribe__text">Скидка 200 ₽ при подписке на рассылку Издательства</p>
+        <img src="./img/Vector 163.svg" alt="Скидка 200 рублей" class="subscribe__orange">
+        <form action="" class="subscribe__form">
+            <input type="text" class="subscribe__input" placeholder="Введите Ваш Email">
+            <button type="submit" class="subscribe__button">Подписаться</button>
+        </form>
+    </section>
+
+    <section class="items swiper-container-items">
+        <div class="items__top">
+            <h2 class="items__header">Готовятся к выходу</h2>
+            <div class="items__control-buttons">
+                <div class="control-buttons__button control-buttons__button_left"><img src="./img/icons/control/left/Arrows of Slider/Arrows/Icon.svg" class="control-buttons__icon" alt="Налево"></div>
+                <div class="control-buttons__button control-buttons__button_right"><img src="./img/icons/control/right/Arrows of Slider/Arrows/Icon.svg" class="control-buttons__icon" alt="Вправо"></div>
+            </div>
+        </div>
+        <div class="items__books swiper-wrapper">
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book1.png" alt="" class="item__image">
+                    <p class="item__label item__label_bestseller">Бестселлер</p>
+                    <p class="item__proposal">1+1=3</p>
+                    <p class="item__category">Корпоративное право</p>
+                    <p class="item__title">Инвестирование: способы, риски, субъекты : монография</p>
+                    <p class="item__author">Майфат А.В.</p>
+                    <p class="item__price">4 450</p>
+                    <div class="item__recommendations">
+                        <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                        <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                    </div>
+                    <div class="item__buttons">
+                        <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                        <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book2.png" alt="" class="item__image">
+                    <p class="item__label item__label_new">Новинка</p>
+                    <p class="item__category">Договорное право</p>
+                    <p class="item__title">Договор коммерческой концессии (франчайзинг). Граж...</p>
+                    <p class="item__author">Багдасарян А.Ф.</p>
+                    <p class="item__price">372</p>
+                    <div class="item__recommendations">
+                        <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                        <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                    </div>
+                    <div class="item__buttons">
+                        <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                        <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book3.png" alt="" class="item__image">
+                    <p class="item__category">Конкурентное право</p>
+                    <p class="item__title">Договор коммерческой концессии (франчайзинг). Граж...</p>
+                    <p class="item__author">Башлаков-Николаев И.В.</p>
+                    <p class="item__price">4 450</p>
+                    <div class="item__recommendations">
+                        <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                        <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                    </div>
+                    <div class="item__buttons">
+                        <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                        <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                    </div>
+                </div>  
+            </div>
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book1.png" alt="" class="item__image">
+                    <p class="item__label item__label_bestseller">Бестселлер</p>
+                    <p class="item__proposal">1+1=3</p>
+                    <p class="item__category">Корпоративное право</p>
+                    <p class="item__title">Инвестирование: способы, риски, субъекты : монография</p>
+                    <p class="item__author">Майфат А.В.</p>
+                    <p class="item__price">450</p>
+                    <div class="item__recommendations">
+                        <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                        <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                    </div>
+                    <div class="item__buttons">
+                        <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                        <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="items__item swiper-slide">
+                <div class="item__content">
+                    <img src="./img/book1.png" alt="" class="item__image">
+                    <p class="item__label item__label_bestseller">Бестселлер</p>
+                    <p class="item__proposal">1+1=3</p>
+                    <p class="item__category">Корпоративное право</p>
+                    <p class="item__title">Инвестирование: способы, риски, субъекты : монография</p>
+                    <p class="item__author">Майфат А.В.</p>
+                    <p class="item__price">450</p>
+                    <div class="item__recommendations">
+                        <span class="item__rating"><img class="icon icon_small" src="./img/icons/star/Icons/🔹 Icon Color.svg" alt="">4.9</span>
+                        <span class="item__recomend"><img class="icon icon_small" src="./img/icons/recomend/Interface/Icon.svg" alt="Рекомендация">89% рекомендуют</span>
+                    </div>
+                    <div class="item__buttons">
+                        <span class="item__add-to-cart"><img class="icon" src="./img/icons/cart/Shopping/Icon.svg" alt="Добавить в корзину"> В корзину</span>
+                        <span class="item__add-to-favorites"><img src="./img/icons/favorites/Interface/Icon.svg" alt="Добавить в избранное"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="items__bottom">
+            <p class="items__header"><a href=# class="show-more">Показать все книги раздела</a></p>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="advantages__item">
+            <div class="advantages__content">
+                <img src="./img/adv1.png" alt="" class="advantages__image">
+                <div class="advantages__description">
+                    <h3 class="advantages__title">Быстрая доставка</h3>
+                    <p class="advantages__subtitle">Доставим бесплатно от 2000 ₽ по всей России</p>
+                </div>
+            </div>
+        </div>
+        <div class="advantages__item">
+            <div class="advantages__content">
+                <img src="./img/adv2.png" alt="" class="advantages__image">
+                <div class="advantages__description">
+                    <h3 class="advantages__title">Безопасная оплата</h3>
+                    <p class="advantages__subtitle">Плати безопасно и легко онлайн на нашем сайте.</p>
+                </div>
+            </div>
+        </div>
+        <div class="advantages__item">
+            <div class="advantages__content">
+                <img src="./img/adv3.png" alt="" class="advantages__image">
+                <div class="advantages__description">
+                    <h3 class="advantages__title">Бонусная программа</h3>
+                    <p class="advantages__subtitle">Дополнительная скидка 15% при регистрации</p>
+                </div>
+            </div>
+        </div>
+        <div class="advantages__item">
+            <div class="advantages__content">
+            <img src="./img/adv4.png" alt="" class="advantages__image">
+                <div class="advantages__description">
+                    <h3 class="advantages__title">Большой выбор</h3>
+                    <p class="advantages__subtitle">Ежегодно выходит в свет более 100 книг</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news swiper-container-news">
+        <div class="news__top">
+            <h3 class="news__header">Новости</h3>
+            <div class="items__control-buttons">
+                <div class="control-buttons__button control-buttons__button_left"><img src="./img/icons/control/left/Arrows of Slider/Arrows/Icon.svg" class="control-buttons__icon" alt="Налево"></div>
+                <div class="control-buttons__button control-buttons__button_right"><img src="./img/icons/control/right/Arrows of Slider/Arrows/Icon.svg" class="control-buttons__icon" alt="Вправо"></div>
+            </div>
+        </div>
+        <div class="news__items swiper-wrapper">
+            <div class="news__item swiper-slide">
+                <img src="./img/news1.png" alt="" class="news__image">
+                <p class="news__date">16 июня 2020</p>
+                <h3 class="news__title">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
+                <p class="news__description">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+                <button class="news__read-more">Читать</button>
+            </div>
+            <div class="news__item swiper-slide">
+                <img src="./img/news2.png" alt="" class="news__image">
+                <p class="news__date">16 июня 2020</p>
+                <h3 class="news__title">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
+                <p class="news__description">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+                <button class="news__read-more">Читать</button>
+            </div>
+            <div class="news__item swiper-slide">
+                <img src="./img/news3.png" alt="" class="news__image">
+                <p class="news__date">16 июня 2020</p>
+                <h3 class="news__title">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
+                <p class="news__description">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+                <button class="news__read-more">Читать</button>
+            </div>
+            <div class="news__item swiper-slide">
+                <img src="./img/news3.png" alt="" class="news__image">
+                <p class="news__date">16 июня 2020</p>
+                <h3 class="news__title">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
+                <p class="news__description">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+                <button class="news__read-more">Читать</button>
+            </div>
+            <div class="news__item swiper-slide">
+                <img src="./img/news3.png" alt="" class="news__image">
+                <p class="news__date">16 июня 2020</p>
+                <h3 class="news__title">Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</h3>
+                <p class="news__description">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+                <button class="news__read-more">Читать</button>
+            </div>
+        </div>
+        <div class="items__bottom">
+            <p class="items__header"><a href=# class="show-more">Показать все новости</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__top">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <img src="./img/logo.png" alt="Логотип" class="footer__logo">
+                    <form action="" class="level-2__form">
+                        <input type="text" class="level-2__search" placeholder="Подписаться на рассылку">
+                        <button type="submit"><img src="./img/icons/subscribe/Icons/20x20/White/Shape.svg" class="search-icon" alt="Поиск"></button>
+                    </form>
+                </div>
+                
+                <div class="footer__social">
+                    <div class="footer__icons">
+                        <a href=# class="social__link"><div class="social__circle social__circle_facebook">
+                            <img src="./img/social/facebook/Buttons/Medium/Social Network/Dark/Icons/Shape Copy.svg" alt="Facebook" class="social__icon social__icon_facebook">
+                        </div></a>
+                        <a href=# class="social__link"><div class="social__circle social__circle_instagram">
+                            <img src="./img/social/instagram/Buttons/Medium/Social Network/Dark/Icons/20x20/Dark/Social Network/Instagram.svg" alt="Instagram" class="social__icon social__icon_instagram">
+                        </div></a>
+                        <a href=# class="social__link"><div class="social__circle social__circle_twitter">
+                            <img src="./img/social/twitter/Buttons/Medium/Social Network/Dark/Icons/Shape Copy 3.svg" alt="Twitter" class="social__icon social__icon_twitter">
+                        </div></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer__center">
+            <div class="footer__column">
+                <h4 class="column__title">Покупателям</h4>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link">Наша почта</a></li>
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link">Оплата и доставка</a></li>
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link">Вопросы и ответы</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="column__title">Издательство</h4>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link">О компании</a></li>
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link">Авторам</a></li>
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link">Вакансии</a></li>
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="column__title">Книги</h4>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link">Все категории</a></li>
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link">Бестселлеры</a></li>
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link">Новинки</a></li>
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link">Скидки и акции</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="column__title">Прайс-лист</h4>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                        <a href="#" class="menu-item__link">
+                            <img src="./img/icons/price-list/Icons/30x30/Dark/File.svg" alt="Прайс-лист" class="prices__icon">
+                            <div class="prices__text">
+                                <p class="prices__header">Скачать прайс-лист</p>
+                                <p class="prices__size">PDF, 12 Mb</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4 class="column__title">Телефон и Email</h4>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link"><img src="./img/Communications/Icon.svg" class="icon" alt="Электронная почта">market@estatut.ru</a></li>
+                    <li class="footer__menu-item"><a href="#" class="menu-item__link"><img src="./img/Communications/Devices/Icon.svg" class="icon" alt="Телефон">8 (968) 660-65-50</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__center_mobile">
+            <div class="footer__column_mobile">
+                <p class="footer__mobile">Покупателям</p>
+                <img src="./img/icons/footer_mobile/Arrows/Icon.svg" alt="Иконка стрелки">
+            </div>
+            <div class="footer__column_mobile">
+                <p class="footer__mobile">Издательство</p>
+                <img src="./img/icons/footer_mobile/Arrows/Icon.svg" alt="Иконка стрелки">
+            </div>
+            <div class="footer__column_mobile">
+                <p class="footer__mobile">Книги</p>
+                <img src="./img/icons/footer_mobile/Arrows/Icon.svg" alt="Иконка стрелки">
+            </div>
+            <div class="footer__column_mobile">
+                <p class="footer__mobile">Прайс-лист</p>
+                <img src="./img/icons/footer_mobile/Arrows/Icon.svg" alt="Иконка стрелки">
+            </div>
+        </div>
+
+
+
+        <div class="footer__bottom_mobile">
+            <ul class="footer__links_mobile">
+                <li class="footer__link"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+                <li class="footer__link"><a href="#" class="footer__link">Договор оферты</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__mobile_contacts">
+            <a href=# class="information__link"><img src="./img/Communications/Devices/Icon.svg" class="icon" alt="Телефон">8 (968) 660-65-50 <img src="./img/Communications/Interface/Icon.svg" alt="Информация"></a>
+
+            <a href=# class="information__link"><img src="./img/Communications/Icon.svg" class="icon" alt="Электронная почта">market@estatut.ru</a>
+
+            <a href=# class="information__link"><img src="./img/Communications/Places/Icon.svg" alt="Город" class="icon"> ул. Лобачевского, 92, корп. 2 119454, г. Москва</a>
+
+            <p class="footer__copyright information__link">© 2020 Издательство «Статут»</p>
+                  
+        </div>
+
+
+        <div class="footer__bottom">
+            <p class="footer__copyright">© 2020 Издательство «Статут»</p>
+            <p class="footer__address">ул. Лобачевского, 92, корп. 2 119454, г. Москва</p>
+            <ul class="footer__links">
+                <li class="footer__link"><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+                <li class="footer__link"><a href="#" class="footer__link">Договор оферты</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./vendor/swiper/js/swiper.min.js"></script>
+<script src="./js/cities.js"></script>
+<script src="./js/script.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        centeredSlides: false,
+        spaceBetween: 0,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+        breakpoints: {
+        414: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        1440: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        }             
+    },
+    
+navigation: {
+nextEl: '.slider__control-button-next',
+prevEl: '.slider__control-button-prev',
+},
+        
+    });
+    
+</script>
+
+<script>
+    var swiper = new Swiper('.swiper-container-items', {
+        slidesPerView: 4,
+        centeredSlides: false,
+        spaceBetween: 0,
+        pagination: {
+        el: '.swiper-pagination1',
+        clickable: true,
+        },
+        breakpoints: {
+        260: {
+        slidesPerView: 1,
+        spaceBetween: 0
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        375: {
+            slidesPerView: 2,
+            spaceBetween: 0
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 0
+        },
+        1440: {
+            slidesPerView: 4,
+            spaceBetween: 0
+        }             
+    },
+    
+navigation: {
+nextEl: '.control-buttons__button_right',
+prevEl: '.control-buttons__button_left',
+},
+        
+    });
+    
+</script>
+
+<script>
+    var swiper = new Swiper('.swiper-container-news', {
+        slidesPerView: 3,
+        centeredSlides: false,
+        spaceBetween: 0,
+        pagination: {
+        el: '.swiper-pagination1',
+        clickable: true,
+        },
+        breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        414: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 0
+        }             
+    },
+    
+navigation: {
+nextEl: '.control-buttons__button_right',
+prevEl: '.control-buttons__button_left',
+},
+        
+    });
+    
+</script>
+
+</html>

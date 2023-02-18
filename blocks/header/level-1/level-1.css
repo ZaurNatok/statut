@@ -1,0 +1,124 @@
+.level-1 {
+    width: 1140px;
+    margin: auto;
+    height: 50px;
+    width: 1140px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.level-1_mobile {
+    display: none;
+}
+
+.level-1__information, .level-1__contacts {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    height: 50px;
+}
+
+.information__element {
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.information__element:not(:last-child) {
+    margin-right: 31.67px;
+}
+
+.information__element_phone {
+    margin-right: 6.67px!important;
+}
+
+.information__link {
+    color: rgba(28, 41, 77, 0.8);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.icon {
+    width: 16.67px;
+    height: 13.33px;
+    margin-right: 8.67px;
+}
+
+@media screen and (max-width:414px) {
+    .level-1, .under-topline {
+        display:none;
+    }
+
+    .level-1_mobile {
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 22px;
+    }
+
+    .level-1_mobile__form {
+        position: relative;
+    }
+
+    .level-1_mobile__button {
+        position: absolute;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        top: 10px;
+        border: none;
+        background: none;
+    }
+
+    .level-1_mobile__input {
+        background: #F7F7F7;
+        border-radius: 5px;
+        border: none;
+        height: 40px;
+        width: 195px;
+        padding: 0 0 0 15px;
+    }
+
+    .level-1_mobile__input:focus {
+        outline: none;
+    }
+
+    .level-1_mobile .logo {
+        margin: 0 20px;
+    }
+
+    .level-1_mobile .icon {
+        width: 20.83px;
+        height: 18.75px;
+    }
+
+    .level-1_mobile .counter {
+        top: 2px;
+        left: 12px;
+    }
+
+    header {
+        padding-bottom: 0!important;
+    }
+}
+
+@media screen and (max-width:388px) {
+    .level-1_mobile .logo {
+        display: none;
+    }
+
+    .level-1_mobile__input {
+        font-size: 12px;
+    }
+}

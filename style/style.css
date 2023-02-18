@@ -1,0 +1,14 @@
+@import url('../blocks/header/header.css');
+@import url('../blocks/grid/grid.css');
+@import url('../blocks/items/items.css');
+@import url('../blocks/subscribe/subscribe.css');
+@import url('../blocks/advantages/advantages.css');
+@import url('../blocks/news/news.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/slider/slider.css');
+@import url('../blocks/modal/modal.css');
+
+body {
+    background: #f9f9fa;
+    font-family: 'Roboto', sans-serif;
+}
